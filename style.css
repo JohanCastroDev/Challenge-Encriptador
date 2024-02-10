@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Commissioner:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nabla&family=Piedra&family=Single+Day&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Commissioner:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nabla&family=Piedra&family=Redacted+Script:wght@300;400;700&family=Single+Day&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Commissioner:wght@100..900&family=Flow+Rounded&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nabla&family=Noto+Sans+Symbols+2&family=Piedra&family=Poor+Story&family=Redacted+Script:wght@300;400;700&family=Single+Day&family=Sixtyfour&display=swap');
+
+
+
+body{
+  font-family: "Poor Story", system-ui;
+}
+
+
+header {
+  text-align: center;
+  margin-bottom: 5vh;
+  /* font-family: "Kanit", sans-serif; */
+  /* font-family: "Sixtyfour", sans-serif; */
+  font-family: "Poor Story", system-ui;
+} 
+
+hr{
+  border: 1px solid black;
+}
+
+h3{
+  font-size: 25px;
+}
+ul {
+  list-style-type: none; /* Quita los puntos de la lista */
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 5px; /* Agrega un pequeño espacio entre los elementos de la lista */
+
+}
+
+#lista{
+  margin-top: 50px;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  position: absolute;
+  top: 3; /* ajusta según la esquina superior */
+}
+
+
+.encryptation-section  button:hover {
+background: black;
+color: white;
+}
+
+.Degradado{
+margin:-8 -8 -8 -8;
+height: 101%;
+background: rgb(189, 189, 189);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,143,38,1) 0%, rgba(150,126,197,1) 48%, rgba(0,255,222,1) 100%);
+background-size: 300% 100%;
+animation: gradient 3s ease infinite;
+}
+
+
+@keyframes gradient {
+0%{
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+.area{
+  border: 3px solid black;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 2vh;
+}
+
+textarea {
+  font-family: 'Arial', sans-serif; 
+  font-size: 16px; 
+  padding: 15px;
+  font-weight: bold;
+  background: rgb(220, 215, 215);
+}
+
+.btn{
+  margin-left: 15vh;
+}
+.btnEncriptar{
+  margin-left: 38vh;
+}
+
+footer{
+  margin-top: 10%;
+  font-size: 20px;
+  
+} 
+#perfil{
+  margin: 10vh 0 0 75%;
+}
+/* Para celulares (pantalla vertical) */
+@media only screen and  (orientation : portrait) {
+  header {
+    text-align: center;
+    margin-bottom: 2vh;
+    /* font-family: "Kanit", sans-serif; */
+    font-size: 10px;
+    font-family: "Poor Story", system-ui;
+  } 
+  img {
+    position: absolute;
+    top: 3; /* ajusta según la esquina superior */
+    width: 80px; 
+  }
+  #lista{
+    margin-top: 20px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1px;
+    margin-left: 8%;
+  }
+  #unencrypted{
+    width: 38vh;
+    height: 20vh;
+  }
+  #encrypted{
+    margin-top: 5px;
+    width: 38vh;
+    height: 20vh;
+    
+  }
+  textarea {
+    font-family: 'Arial', sans-serif; 
+    font-size: 12px; 
+    padding: 15px;
+    font-weight: bold;
+    background: rgb(220, 215, 215);
+  }
+
+  footer{
+    display: none;
+  }
+  .btnEncriptar{
+    margin-left: 12vh;
+  }
+  
+  #unencrypt{
+    margin-bottom: 50px;
+  }
+
+  .area{
+    margin-bottom: 5px;
+  }
+ 
+  .btn{
+    margin-left: 12vh;
+  }
+  
+}
+/* Para celulares (pantalla horizontal) */
+/* @media only screen and (orientation: landscape) {
+  header {
+    text-align: center;
+    font-size: 15px;
+    font-family: "Poor Story", system-ui;
+  } 
+  img {
+    position: absolute;
+    width: 80px; 
+  }
+  #lista{
+    margin-top: 20px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    margin-left: 10vh;
+  }
+  #unencrypted{
+    width: 80vh;
+    height: 40vh;
+  }
+  #encrypted{
+    margin-top: 5px;
+    width: 80vh;
+    height: 40vh;
+  }
+  textarea {
+    font-family: 'Arial', sans-serif; 
+    font-size: 12px; 
+    padding: 15px;
+    font-weight: bold;
+    background: rgb(220, 215, 215);
+  }
+
+  .btnEncriptar{
+    margin-left: 24vh;
+  }
+  
+  footer{
+    display: block;
+  }
+
+  .area{
+    margin-bottom: 5px;
+  }
+ 
+  .btn{
+    margin-left: 5vh;
+  } 
+  #unencrypt{
+    float: left;
+    margin-left: 20vh;
+  }
+} */
+

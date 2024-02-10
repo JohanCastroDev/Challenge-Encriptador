@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <!-- <link rel="stylesheet" href="reset.css">  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://app.aluracursos.com/assets/images/aluraespanhol/favicon.ico">
+     
+</head>
+
+
+  <body class="Degradado">
+    <img src="img/Logo.png" alt="">
+    <header>
+      
+      <h1><ins>¡Encripta tu mensaje !</ins></h1>
+      
+   
+      
+    <div id="lista">
+      <h3>Limitaciones:</h3>
+      <ul>
+          <li>No se podran ingresar mayusculas</li>
+          <li>No se podran usar acentos</li>
+          <li>No se podran caracteres especiales</li>
+      </ul>
+    </div>
+    <br>
+    <hr>
+    </header> 
+
+<main class="container">
+
+
+        <div class="encryptation-section">
+          <textarea id="unencrypted" class="area" cols="70" rows="20"></textarea>
+          <div class="btnEncriptar">
+            <button id="encrypt" style="width: 150px; height: 40px; margin-right: 80px;" class="area"><strong>Encriptar</strong></button>
+          </div>
+        </div>
+
+
+        <div class="encryptation-section">     
+          <!-- <img src="img/Muñeco.png" class="imagen"> -->
+          <textarea id="encrypted" class="area" cols="70" rows="20"></textarea>
+          
+          <div class="btn">
+            <button  id="copiar" style="width: 150px; height: 40px;" class="area" ><strong>Copiar</strong></button>
+            <button id="pegar" style="width: 150px; height: 40px;" class="area"><strong>Pegar</strong></button>
+            <button  id="unencrypt" style="width: 150px; height: 40px;" class="area"><strong>Desencriptar</strong></button>
+          </div>
+        </div>
+    
+
+        <!-- <footer><strong>Programador: Johan Fonseca / Costa Rica</strong></footer> -->
+        
+        <!-- <div id="perfil" class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="johan-fonseca-perez" data-version="v1"></div> -->
+              
+        <div id="perfil" class="badge-base LI-profile-badge" data-locale="es_ES" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="johan-fonseca-perez" data-version="v1"></div>
+              
+</main>
+
+    <script type="module" src="script.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  </body>
+</html>
